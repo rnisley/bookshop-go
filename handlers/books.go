@@ -25,7 +25,7 @@ func CreateBook(c *gin.Context) {
 		return
 	}
 
-	c.JSON(200, gin.H{"status": "success"})
+	c.JSON(201, gin.H{"status": "success"})
 }
 
 func GetPrice(c *gin.Context) {

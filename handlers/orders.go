@@ -27,7 +27,7 @@ func CreateOrder(c *gin.Context) {
 		return
 	}
 
-	c.JSON(200, gin.H{"status": "success"})
+	c.JSON(201, gin.H{"status": "success"})
 }
 
 func GetShipmentStatus(c *gin.Context) {
@@ -103,5 +103,6 @@ func GetOrderStatus(c *gin.Context) {
 		<p>Book ID: `+fmt.Sprint(json.BookId)+`</p>
 		<p>Customer ID: `+fmt.Sprint(json.CustomerId)+`</p>
 		<p>Shipping Address: `+fmt.Sprint(addr)+`</p>
+		</body>
 	</html>`))
 }
